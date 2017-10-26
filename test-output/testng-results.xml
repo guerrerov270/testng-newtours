@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34250" started-at="2017-10-26T05:48:00Z" finished-at="2017-10-26T05:48:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34250" started-at="2017-10-26T05:48:00Z" finished-at="2017-10-26T05:48:34Z">
+      <class name="scriptsSimples.ReservaCruceroVariosMetodos">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="initializeTestBaseSetup" is-config="true" duration-ms="10558" started-at="2017-10-26T00:48:00Z" finished-at="2017-10-26T00:48:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="login" duration-ms="6235" started-at="2017-10-26T00:48:11Z" finished-at="2017-10-26T00:48:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="ingresoCruises()[pri:0, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="ingresoCruises" duration-ms="2374" started-at="2017-10-26T00:48:17Z" depends-on-methods="scriptsSimples.ReservaCruceroVariosMetodos.login" finished-at="2017-10-26T00:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ingresoCruises -->
+        <test-method status="PASS" signature="reservar()[pri:0, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="reservar" duration-ms="14625" started-at="2017-10-26T00:48:19Z" depends-on-methods="scriptsSimples.ReservaCruceroVariosMetodos.ingresoCruises" finished-at="2017-10-26T00:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reservar -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="tearDown" is-config="true" duration-ms="285" started-at="2017-10-26T00:48:34Z" finished-at="2017-10-26T00:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- scriptsSimples.ReservaCruceroVariosMetodos -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
