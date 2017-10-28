@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import base.TestBase;
 import pageObjects.LoginPage;
 import pageObjects.MenuNavegacionPage;
-import static org.testng.Assert.*;
 
 public class LoginTest extends TestBase {
 

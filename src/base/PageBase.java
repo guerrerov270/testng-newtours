@@ -1,6 +1,5 @@
 package base;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,8 +13,8 @@ public class PageBase {
 	 */
 	protected WebDriver driver;
 	/**
-	 * Título de página esperado. Será usuado en isPageLoad () para comprobar si la
-	 * página está cargada.
+	 * Tï¿½tulo de pï¿½gina esperado. Serï¿½ usuado en isPageLoad () para comprobar si la
+	 * pï¿½gina estï¿½ cargada.
 	 */
 	protected String pageTitle;
 
@@ -26,22 +25,22 @@ public class PageBase {
 	}
 
 	/**
-	 * Comprueba si la página se carga comparando el título de página esperado con
-	 * un título de página real.
+	 * Comprueba si la pï¿½gina se carga comparando el tï¿½tulo de pï¿½gina esperado con
+	 * un tï¿½tulo de pï¿½gina real.
 	 **/
 	public boolean isPageLoad() {
 		return (driver.getTitle().contains(pageTitle));
 	}
 
 	/**
-	 * Retorna el título de la página
+	 * Retorna el tï¿½tulo de la pï¿½gina
 	 */
 	public String getTitle() {
 		return pageTitle;
 	}
 
 	/**
-	 * Envía el texto recibido al elemento que recibe por parámetro
+	 * Envï¿½a el texto recibido al elemento que recibe por parï¿½metro
 	 * 
 	 * @param element
 	 * @param text
@@ -58,7 +57,7 @@ public class PageBase {
 	}
 
 	/**
-	 * Hace clic sobre el elemento que recibe por parámetro
+	 * Hace clic sobre el elemento que recibe por parï¿½metro
 	 * 
 	 * @param element
 	 * @return
@@ -74,14 +73,14 @@ public class PageBase {
 	}
 
 	/**
-	 * Verifica si el texto esta presente en la página
+	 * Verifica si el texto esta presente en la pï¿½gina
 	 */
 	public boolean isTextPresent(String text) {
 		return driver.getPageSource().contains(text);
 	}
 
 	/**
-	 * Verifica si el elemento esta presente en la página
+	 * Verifica si el elemento esta presente en la pï¿½gina
 	 */
 	public boolean isElementPresentAndDisplay(WebElement element) {
 		try {
@@ -92,19 +91,19 @@ public class PageBase {
 	}
 
 	/**
-	 * Método para seleccionar un valor de un comboBox
+	 * Mï¿½todo para seleccionar un valor de un comboBox
 	 * @param element, es el tipo select
-	 * @param text, es el texto de la opción
+	 * @param text, es el texto de la opciï¿½n
 	 * @return
 	 */
 	public boolean selectDropdownVisibleText(WebElement element, String text) {
-		//Variable para definir la resouesta del método
+		//Variable para definir la resouesta del mï¿½todo
 		boolean result = true;
 		
-		//Tipo select gráfico de selenium para hacer el cast del elemento recibido
+		//Tipo select grï¿½fico de selenium para hacer el cast del elemento recibido
 		Select listBox;
 		
-		//Si el elemento está presente y visible
+		//Si el elemento estï¿½ presente y visible
 		if (isElementPresentAndDisplay(element)) {
 			//Lo almaceno en el listBox
 			listBox= new Select(element);
@@ -115,6 +114,6 @@ public class PageBase {
 		}
 
 		return result;
-	}// Fin método selectDropdownVisibleText
+	}// Fin mï¿½todo selectDropdownVisibleText
 
 }// Fin clase PageBase
