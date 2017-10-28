@@ -8,7 +8,7 @@ import pageObjects.LoginPage;
 import pageObjects.MenuNavegacionPage;
 import static org.testng.Assert.*;
 
-public class NavegacionMenu extends TestBase {
+public class LoginTest extends TestBase {
 
 	protected MenuNavegacionPage menuNavegacion;
 	protected LoginPage login;
