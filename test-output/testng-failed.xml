@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="scriptsSimples.ReservaCruceroVariosMetodos">
+      <class name="test.PruebaNavegacionMenu">
         <methods>
-          <include name="ingresoCruises"/>
+          <include name="autenticarse"/>
           <include name="initializeTestBaseSetup"/>
-          <include name="login"/>
-          <include name="reservar"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- scriptsSimples.ReservaCruceroVariosMetodos -->
+      </class> <!-- test.PruebaNavegacionMenu -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

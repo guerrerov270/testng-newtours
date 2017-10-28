@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29564" started-at="2017-10-26T07:23:10Z" finished-at="2017-10-26T07:23:40Z">
+  <suite name="Default suite" duration-ms="19328" started-at="2017-10-28T19:53:42Z" finished-at="2017-10-28T19:54:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29564" started-at="2017-10-26T07:23:10Z" finished-at="2017-10-26T07:23:40Z">
-      <class name="scriptsSimples.ReservaCruceroVariosMetodos">
-        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="initializeTestBaseSetup" is-config="true" duration-ms="8337" started-at="2017-10-26T02:23:10Z" finished-at="2017-10-26T02:23:18Z">
+    <test name="Default test" duration-ms="19328" started-at="2017-10-28T19:53:42Z" finished-at="2017-10-28T19:54:01Z">
+      <class name="test.NavegacionMenu">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.NavegacionMenu@c038203]" name="initializeTestBaseSetup" is-config="true" duration-ms="8800" started-at="2017-10-28T14:53:42Z" finished-at="2017-10-28T14:53:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="login()[pri:1, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="login" duration-ms="4961" started-at="2017-10-26T02:23:18Z" finished-at="2017-10-26T02:23:23Z">
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.NavegacionMenu@c038203]" name="validarTextLinks" duration-ms="1406" started-at="2017-10-28T14:53:51Z" finished-at="2017-10-28T14:53:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="ingresoCruises()[pri:2, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="ingresoCruises" duration-ms="2324" started-at="2017-10-26T02:23:23Z" depends-on-methods="scriptsSimples.ReservaCruceroVariosMetodos.login" finished-at="2017-10-26T02:23:26Z">
+        </test-method> <!-- validarTextLinks -->
+        <test-method status="PASS" signature="verificarCamposLogin()[pri:1, instance:test.NavegacionMenu@c038203]" name="verificarCamposLogin" duration-ms="715" started-at="2017-10-28T14:53:52Z" finished-at="2017-10-28T14:53:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ingresoCruises -->
-        <test-method status="PASS" signature="reservar()[pri:3, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="reservar" duration-ms="13523" started-at="2017-10-26T02:23:26Z" depends-on-methods="scriptsSimples.ReservaCruceroVariosMetodos.ingresoCruises, scriptsSimples.ReservaCruceroVariosMetodos.login" finished-at="2017-10-26T02:23:39Z">
+        </test-method> <!-- verificarCamposLogin -->
+        <test-method status="PASS" signature="autenticarse()[pri:2, instance:test.NavegacionMenu@c038203]" name="autenticarse" duration-ms="7965" started-at="2017-10-28T14:53:53Z" finished-at="2017-10-28T14:54:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reservar -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:scriptsSimples.ReservaCruceroVariosMetodos@c038203]" name="tearDown" is-config="true" duration-ms="271" started-at="2017-10-26T02:23:39Z" finished-at="2017-10-26T02:23:40Z">
+        </test-method> <!-- autenticarse -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.NavegacionMenu@c038203]" name="tearDown" is-config="true" duration-ms="261" started-at="2017-10-28T14:54:01Z" finished-at="2017-10-28T14:54:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- scriptsSimples.ReservaCruceroVariosMetodos -->
+      </class> <!-- test.NavegacionMenu -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

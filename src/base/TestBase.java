@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -27,8 +28,8 @@ public class TestBase {
 	}
 
 	/**
-	 * Descripción: Método setupDriver donde se establece a qué navegador dar
-	 * apertura Recibe como parámetro el navegador y la url
+	 * Descripciï¿½n: Mï¿½todo setupDriver donde se establece a quï¿½ navegador dar
+	 * apertura Recibe como parï¿½metro el navegador y la url
 	 * 
 	 * @param browser
 	 * @param appURL
@@ -117,6 +118,19 @@ public class TestBase {
 		}
 		return true;
 	}
+	
+	/**
+	 * Introduce una espera antes de ejecutar la siguiente instrucciÃ³n
+	 * @param segundos:
+	 *            Segundos a esperar
+	 */
+	public void esperarAntesDeEjecutar(int segundos) {
+		try {
+			Thread.sleep(segundos * 1000);
+		} catch (Exception e) {
+			Assert.fail("Ha fallado el mÃ©todo esperar");
+		}
+	}// Fin mÃ©todo esperarAntesDeEjecutar
 
 	@BeforeClass
 	public void initializeTestBaseSetup() {

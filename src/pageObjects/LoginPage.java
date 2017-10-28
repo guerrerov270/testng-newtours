@@ -40,7 +40,7 @@ public class LoginPage extends PageBase {
 		return isElementPresentAndDisplay(driver.findElement(element));
 	}
 
-	// Métodos get para los elementos
+	// MÃ©todos get para los elementos
 	public WebElement getInputUserName() {
 		return inputUserName;
 	}

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.How;
 import base.PageBase;
 
 /**
- * Representación de una página de la aplicación web a probar
+ * Representaciï¿½n de una pï¿½gina de la aplicaciï¿½n web a probar
  * 
  * @author finguerrero
  *
@@ -17,9 +17,9 @@ public class MenuNavegacionPage extends PageBase {
 
 	public MenuNavegacionPage(WebDriver driver, String pageTitle) {
 		super(driver, pageTitle);
-	}// Fin método MenuNavegacionPage
+	}// Fin mï¿½todo MenuNavegacionPage
 
-	// WebElements menú superior
+	// WebElements menï¿½ superior
 	@FindBy(how = How.LINK_TEXT, using = "SIGN-ON")
 	private WebElement lnkSingOn;
 	@FindBy(how = How.LINK_TEXT, using = "SIGN-OFF")
@@ -31,7 +31,7 @@ public class MenuNavegacionPage extends PageBase {
 	@FindBy(how = How.LINK_TEXT, using = "CONTACT")
 	private WebElement lnkContact;
 
-	// WebElements menú lateral
+	// WebElements menï¿½ lateral
 	@FindBy(how = How.LINK_TEXT, using = "Home")
 	private WebElement lnkHome;
 	@FindBy(how = How.LINK_TEXT, using = "Flights")
@@ -55,7 +55,7 @@ public class MenuNavegacionPage extends PageBase {
 		clickButtonLink(element);
 	}
 
-	// Métodos get para los elementos
+	// Mï¿½todos get para los elementos
 	public WebElement getLnkSingOn() {
 		return lnkSingOn;
 	}
@@ -103,5 +103,21 @@ public class MenuNavegacionPage extends PageBase {
 	public WebElement getLnkVacations() {
 		return lnkVacations;
 	}
+
+	/**
+	 * Verifica que el texto del enlace del webElement coincida con el recibido por parÃ¡metro
+	 * @param elemento: el elemento que representa la etiqueta HTML
+	 * @param textoEnlace: El texto del enlace 
+	 * @return resultado: true or false
+	 */
+	public boolean getTextLink(WebElement elemento, String textoEnlace) {
+		boolean resultado;
+		if (elemento.getText().equals(textoEnlace)) {
+			resultado= true;
+		}else {
+			resultado=false;
+		}
+		return resultado;
+	}// Fin mÃ©todo getTextLink
 
 }// Fin clase MenuNavegacionPage
