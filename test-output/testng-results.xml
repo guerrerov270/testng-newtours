@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40834" started-at="2017-10-30T04:07:18Z" finished-at="2017-10-30T04:07:59Z">
+  <suite name="Default suite" duration-ms="32254" started-at="2017-10-30T04:19:28Z" finished-at="2017-10-30T04:20:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40834" started-at="2017-10-30T04:07:18Z" finished-at="2017-10-30T04:07:59Z">
+    <test name="Default test" duration-ms="32254" started-at="2017-10-30T04:19:28Z" finished-at="2017-10-30T04:20:00Z">
       <class name="test.RegisterTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.RegisterTest@c038203]" name="initializeTestBaseSetup" is-config="true" duration-ms="20960" started-at="2017-10-29T23:07:18Z" finished-at="2017-10-29T23:07:39Z">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.RegisterTest@c038203]" name="initializeTestBaseSetup" is-config="true" duration-ms="10871" started-at="2017-10-29T23:19:28Z" finished-at="2017-10-29T23:19:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.RegisterTest@c038203]" name="validarTextLinks" duration-ms="663" started-at="2017-10-29T23:07:39Z" finished-at="2017-10-29T23:07:40Z">
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.RegisterTest@c038203]" name="validarTextLinks" duration-ms="562" started-at="2017-10-29T23:19:39Z" finished-at="2017-10-29T23:19:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarTextLinks -->
-        <test-method status="PASS" signature="verificarCamposRegister()[pri:1, instance:test.RegisterTest@c038203]" name="verificarCamposRegister" duration-ms="5350" started-at="2017-10-29T23:07:40Z" finished-at="2017-10-29T23:07:45Z">
+        <test-method status="PASS" signature="verificarCamposRegister()[pri:1, instance:test.RegisterTest@c038203]" name="verificarCamposRegister" duration-ms="5126" started-at="2017-10-29T23:19:39Z" finished-at="2017-10-29T23:19:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificarCamposRegister -->
-        <test-method status="PASS" signature="registrase()[pri:2, instance:test.RegisterTest@c038203]" name="registrase" duration-ms="12117" started-at="2017-10-29T23:07:45Z" finished-at="2017-10-29T23:07:57Z">
+        <test-method status="PASS" signature="registrase()[pri:2, instance:test.RegisterTest@c038203]" name="registrase" duration-ms="15306" started-at="2017-10-29T23:19:44Z" finished-at="2017-10-29T23:20:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.RegisterTest@c038203]" name="tearDown" is-config="true" duration-ms="1553" started-at="2017-10-29T23:07:57Z" finished-at="2017-10-29T23:07:59Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.RegisterTest@c038203]" name="tearDown" is-config="true" duration-ms="214" started-at="2017-10-29T23:20:00Z" finished-at="2017-10-29T23:20:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

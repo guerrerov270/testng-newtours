@@ -98,8 +98,8 @@ public class RegisterTest extends TestBase {
 
 	/**
 	 * Método que realiza el proceso de registro, comprueba el resultado esperado
-	 * buscando el enlace SIGN-OFF que se habilita únicamente cuando el usuario se
-	 * encuentra autenticado.
+	 * buscando el enlace SIGN-OFF que se habilita luego de que el usuario se
+	 * encuentra registrado.
 	 */
 	@Test(priority = 2)
 	public void registrase() {
