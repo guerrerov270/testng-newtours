@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.TestBase;
-import pageObjects.LoginPage;
 import pageObjects.MenuNavegacionPage;
 import pageObjects.RegistroPage;
 
@@ -34,8 +33,8 @@ public class RegisterTest extends TestBase {
 
 	/**
 	 * Método para válidar el enlace de Register, como el menú aparece en varias
-	 * pantallas del aplicativo este método lo voy a declarar en la clase padre
-	 * en un próximo refactor
+	 * pantallas del aplicativo este método lo voy a declarar en la clase padre en
+	 * un próximo refactor
 	 */
 	@Test
 	public void validarTextLinks() {
@@ -45,11 +44,14 @@ public class RegisterTest extends TestBase {
 			Assert.fail("El link no contiene el texto esperado REGISTER");
 		}
 	}// Fin método validarTextLinks
-	
+
 	@Test(priority = 1)
 	public void verificarCamposRegister() {
 		register = new RegistroPage(driver, pageRegister);
-		
+
+		// Voy a la página de registro
+		menuNavegacion.clickButtonLink(menuNavegacion.getLnkRegister());
+
 		if (!(register.isElementPresentAndDisplay(register.getInputFirstName()))) {
 			Assert.fail("No se encontró el campo de first name");
 		}
@@ -92,6 +94,25 @@ public class RegisterTest extends TestBase {
 		if (!(register.isElementPresentAndDisplay(register.getButtonRegister()))) {
 			Assert.fail("No se encontró el botón Submit");
 		}
-	}// Fin método verificarCamposLogin
+	}// Fin método verificarCamposRegister
+
+	/**
+	 * Método que realiza el proceso de registro, comprueba el resultado esperado
+	 * buscando el enlace SIGN-OFF que se habilita únicamente cuando el usuario se
+	 * encuentra autenticado.
+	 */
+	@Test(priority = 2)
+	public void registrase() {
+
+		register = new RegistroPage(driver, pageRegister);
+		menuNavegacion = new MenuNavegacionPage(driver, pageRegister);
+		register.registroMercuryTours(firstName, lastName, phone, email, address1, address2, city, state, postalCode,
+				country, userName, password, confirmPassword);
+		esperarAntesDeEjecutar(3);
+		if (!(menuNavegacion.getTextLink(menuNavegacion.getLnkSingOf(), "SIGN-OFF"))) {
+			Assert.fail("El link no contiene el texto SIGN-OFF, no está registrado");
+		}
+
+	}// Fin método registrarse
 
 }

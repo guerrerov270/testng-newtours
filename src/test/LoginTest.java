@@ -69,7 +69,7 @@ public class LoginTest extends TestBase {
 		login.loginMercuryTours(userName, password);
 		esperarAntesDeEjecutar(3);
 		if (!(menuNavegacion.getTextLink(menuNavegacion.getLnkSingOf(), "SIGN-OFF"))) {
-			Assert.fail("El link no contiene el texto esperado SIGN-OFF");
+			Assert.fail("El link no contiene el texto SIGN-OFF, no está autenticado");
 		}
 	}// Fin método autenticarse
 
