@@ -12,7 +12,7 @@ public class RegistroPage extends PageBase {
 
 	public RegistroPage(WebDriver driver, String pageTitle) {
 		super(driver, pageTitle);
-	}
+	} //Fin constructor
 
 	// WebElements para submit
 	// Contact information
@@ -51,11 +51,29 @@ public class RegistroPage extends PageBase {
 	@FindBy(how = How.NAME, using = "register")
 	private WebElement buttonRegister;
 
-	public void registroMercuryTours(String firstName, String lastName, String phone, String email, String address1,
-			String address2, String city, String state, String postalCode, String country, String userName,
-			String password, String confirmPassword) {
+	/**
+	 * Método que realiza el registro en Mercury Tours a partir de los
+	 * parámetros recibidos
+	 * @param firstName
+	 * @param lastName
+	 * @param phone
+	 * @param email
+	 * @param address1
+	 * @param address2
+	 * @param city
+	 * @param state
+	 * @param postalCode
+	 * @param country
+	 * @param userName
+	 * @param password
+	 * @param confirmPassword
+	 */
+	public void registroMercuryTours(String firstName, String lastName,
+			String phone, String email, String address1, String address2,
+			String city, String state, String postalCode, String country,
+			String userName, String password, String confirmPassword) {
 
-		// Verifico que me encuentre
+		// Relleno los campos con los parámetros recibidos
 		sendText(inputFirstName, firstName);
 		sendText(inputLastName, lastName);
 		sendText(inputPhone, phone);
