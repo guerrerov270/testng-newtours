@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20273" started-at="2017-10-28T20:12:09Z" finished-at="2017-10-28T20:12:30Z">
+  <suite name="Default suite" duration-ms="33063" started-at="2017-10-30T03:18:01Z" finished-at="2017-10-30T03:18:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20273" started-at="2017-10-28T20:12:09Z" finished-at="2017-10-28T20:12:30Z">
+    <test name="Default test" duration-ms="33063" started-at="2017-10-30T03:18:01Z" finished-at="2017-10-30T03:18:34Z">
       <class name="test.LoginTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.LoginTest@c038203]" name="initializeTestBaseSetup" is-config="true" duration-ms="9638" started-at="2017-10-28T15:12:09Z" finished-at="2017-10-28T15:12:19Z">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.LoginTest@c038203]" name="initializeTestBaseSetup" is-config="true" duration-ms="20684" started-at="2017-10-29T22:18:01Z" finished-at="2017-10-29T22:18:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.LoginTest@c038203]" name="validarTextLinks" duration-ms="1385" started-at="2017-10-28T15:12:19Z" finished-at="2017-10-28T15:12:20Z">
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.LoginTest@c038203]" name="validarTextLinks" duration-ms="1609" started-at="2017-10-29T22:18:22Z" finished-at="2017-10-29T22:18:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarTextLinks -->
-        <test-method status="PASS" signature="verificarCamposLogin()[pri:1, instance:test.LoginTest@c038203]" name="verificarCamposLogin" duration-ms="753" started-at="2017-10-28T15:12:20Z" finished-at="2017-10-28T15:12:21Z">
+        <test-method status="PASS" signature="verificarCamposLogin()[pri:1, instance:test.LoginTest@c038203]" name="verificarCamposLogin" duration-ms="708" started-at="2017-10-29T22:18:23Z" finished-at="2017-10-29T22:18:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificarCamposLogin -->
-        <test-method status="PASS" signature="autenticarse()[pri:2, instance:test.LoginTest@c038203]" name="autenticarse" duration-ms="8129" started-at="2017-10-28T15:12:21Z" finished-at="2017-10-28T15:12:29Z">
+        <test-method status="PASS" signature="autenticarse()[pri:2, instance:test.LoginTest@c038203]" name="autenticarse" duration-ms="9629" started-at="2017-10-29T22:18:24Z" finished-at="2017-10-29T22:18:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autenticarse -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.LoginTest@c038203]" name="tearDown" is-config="true" duration-ms="242" started-at="2017-10-28T15:12:29Z" finished-at="2017-10-28T15:12:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.LoginTest@c038203]" name="tearDown" is-config="true" duration-ms="281" started-at="2017-10-29T22:18:34Z" finished-at="2017-10-29T22:18:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

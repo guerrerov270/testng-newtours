@@ -15,7 +15,6 @@ public class RegistroPage extends PageBase {
 	}
 
 	// WebElements para submit
-
 	// Contact information
 	@FindBy(how = How.NAME, using = "firstName")
 	private WebElement inputFirstName;
@@ -56,6 +55,7 @@ public class RegistroPage extends PageBase {
 			String address2, String city, String state, String postalCode, String country, String userName,
 			String password, String confirmPassword) {
 
+		// Verifico que me encuentre
 		sendText(inputFirstName, firstName);
 		sendText(inputLastName, lastName);
 		sendText(inputPhone, phone);
@@ -74,13 +74,13 @@ public class RegistroPage extends PageBase {
 			sendText(inputConfirmPassword, confirmPassword);
 			clickButtonLink(buttonRegister);
 
-		}else {
+		} else {
 			Assert.fail("Elemento select no encontrado");
 		}
 
 	}// Fin método registroMercuryTours
 
-	//Métodos get para cada elemento
+	// Métodos get para cada elemento
 	public WebElement getInputFirstName() {
 		return inputFirstName;
 	}

@@ -54,7 +54,7 @@ public class LoginTest extends TestBase {
 		if (!(login.isElementPresentAndDisplay(login.getButtonSingIn()))) {
 			Assert.fail("No se encontró el botón Sign-In");
 		}
-	}
+	}// Fin método verificarCamposLogin
 
 	/**
 	 * Método que realiza el proceso de autenticación, comprueba el resultado
