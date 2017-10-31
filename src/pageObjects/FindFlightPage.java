@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
 import base.PageBase;
 
 public class FindFlightPage extends PageBase {
@@ -14,9 +13,9 @@ public class FindFlightPage extends PageBase {
 	} // Fin constructor
 
 	// Web elements flights details
-	@FindBy(how = How.XPATH, using = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[1]")
+	@FindBy(how = How.CSS, using = "[name='tripType'][value*='roundtrip']")
 	private WebElement radioRoundTrip;
-	@FindBy(how = How.XPATH, using = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[2]")
+	@FindBy(how = How.CSS, using = "[name='tripType'][value*='oneway']")
 	private WebElement radioOneWay;
 
 	@FindBy(how = How.NAME, using = "passCount")
@@ -35,24 +34,116 @@ public class FindFlightPage extends PageBase {
 	private WebElement selectDayEnd;
 
 	// Web elements preferences
-	@FindBy(how = How.XPATH, using = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[9]/td[2]/font/input")
+	@FindBy(how = How.CSS, using = "[name='servClass'][value*='Coach']")
 	private WebElement radioEconomyClass;
-	@FindBy(how = How.XPATH, using = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[9]/td[2]/font/font/input[1]")
+	@FindBy(how = How.CSS, using = "[name='servClass'][value*='Business']")
 	private WebElement radioBussinessClass;
-	@FindBy(how = How.XPATH, using = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[9]/td[2]/font/font/input[2]")
+	@FindBy(how = How.CSS, using = "[name='servClass'][value*='First']")
 	private WebElement radioFirstClass;
-	
+
 	@FindBy(how = How.NAME, using = "airline")
 	private WebElement selectAirline;
-	
+
 	// Botón continue
 	@FindBy(how = How.NAME, using = "findFlights")
 	private WebElement buttonContinue;
-	
-	public void seleccionFindFlight(){
-		
+
+	/**
+	 * Método para seleccionar las opciones en la página de flight finder a
+	 * partir de los parámetros recibidos
+	 * @param tripType
+	 * @param passengers
+	 * @param departing
+	 * @param monthIni
+	 * @param dayIni
+	 * @param arrivingIn
+	 * @param monthEnd
+	 * @param dayEnd
+	 * @param serviceClass
+	 * @param airline
+	 */
+	public void seleccionFindFlight(String tripType, String passengers,
+			String departing, String monthIni, String dayIni,
+			String arrivingIn, String monthEnd, String dayEnd,
+			String serviceClass, String airline) {
+
+		if (tripType.equals("Round trip"))
+			selectRadioButton(radioRoundTrip);
+		if (tripType.equals("One way"))
+			selectRadioButton(radioOneWay);
+		selectDropdownVisibleText(selectPassengers, passengers);
+		selectDropdownVisibleText(selectDepartingFrom, departing);
+		selectDropdownVisibleText(selectMonthIni, monthIni);
+		selectDropdownVisibleText(selectDayIni, dayIni);
+		selectDropdownVisibleText(selectArrivingIn, arrivingIn);
+		selectDropdownVisibleText(selectReturning, monthEnd);
+		selectDropdownVisibleText(selectDayEnd, dayEnd);
+		if (serviceClass.equals("Economy class"))
+			selectRadioButton(radioEconomyClass);
+		if (serviceClass.equals("Business class"))
+			selectRadioButton(radioBussinessClass);
+		if (serviceClass.equals("First class"))
+			selectRadioButton(radioFirstClass);
+		selectDropdownVisibleText(selectAirline, airline);
+		clickButtonLink(buttonContinue);
 	}// Fin método seleccionFindFlight
+
+	//Método get para cada elemento
+	public WebElement getRadioRoundTrip() {
+		return radioRoundTrip;
+	}
+
+	public WebElement getRadioOneWay() {
+		return radioOneWay;
+	}
+
+	public WebElement getSelectPassengers() {
+		return selectPassengers;
+	}
+
+	public WebElement getSelectDepartingFrom() {
+		return selectDepartingFrom;
+	}
+
+	public WebElement getSelectMonthIni() {
+		return selectMonthIni;
+	}
+
+	public WebElement getSelectDayIni() {
+		return selectDayIni;
+	}
+
+	public WebElement getSelectArrivingIn() {
+		return selectArrivingIn;
+	}
+
+	public WebElement getSelectReturning() {
+		return selectReturning;
+	}
+
+	public WebElement getSelectDayEnd() {
+		return selectDayEnd;
+	}
+
+	public WebElement getRadioEconomyClass() {
+		return radioEconomyClass;
+	}
+
+	public WebElement getRadioBussinessClass() {
+		return radioBussinessClass;
+	}
+
+	public WebElement getRadioFirstClass() {
+		return radioFirstClass;
+	}
+
+	public WebElement getSelectAirline() {
+		return selectAirline;
+	}
+
+	public WebElement getButtonContinue() {
+		return buttonContinue;
+	}
 	
-	
-	
-} //Fin clase FindFlightPage
+
+} // Fin clase FindFlightPage

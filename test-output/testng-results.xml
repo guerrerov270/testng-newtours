@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28880" started-at="2017-10-30T04:48:02Z" finished-at="2017-10-30T04:48:31Z">
+  <suite name="Default suite" duration-ms="30817" started-at="2017-10-31T06:38:10Z" finished-at="2017-10-31T06:38:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28880" started-at="2017-10-30T04:48:02Z" finished-at="2017-10-30T04:48:31Z">
-      <class name="test.RegisterTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.RegisterTest@6767c1fc]" name="initializeTestBaseSetup" is-config="true" duration-ms="9133" started-at="2017-10-29T23:48:02Z" finished-at="2017-10-29T23:48:11Z">
+    <test name="Default test" duration-ms="30817" started-at="2017-10-31T06:38:10Z" finished-at="2017-10-31T06:38:41Z">
+      <class name="test.FlightReservationTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.FlightReservationTest@6767c1fc]" name="initializeTestBaseSetup" is-config="true" duration-ms="9701" started-at="2017-10-31T01:38:10Z" finished-at="2017-10-31T01:38:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.RegisterTest@6767c1fc]" name="validarTextLinks" duration-ms="520" started-at="2017-10-29T23:48:11Z" finished-at="2017-10-29T23:48:12Z">
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.FlightReservationTest@6767c1fc]" name="validarTextLinks" duration-ms="6917" started-at="2017-10-31T01:38:20Z" finished-at="2017-10-31T01:38:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarTextLinks -->
-        <test-method status="PASS" signature="verificarCamposRegister()[pri:1, instance:test.RegisterTest@6767c1fc]" name="verificarCamposRegister" duration-ms="4976" started-at="2017-10-29T23:48:12Z" finished-at="2017-10-29T23:48:17Z">
+        <test-method status="PASS" signature="verificarElementosFindFlight()[pri:1, instance:test.FlightReservationTest@6767c1fc]" name="verificarElementosFindFlight" duration-ms="3920" started-at="2017-10-31T01:38:27Z" finished-at="2017-10-31T01:38:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificarCamposRegister -->
-        <test-method status="PASS" signature="registrase()[pri:2, instance:test.RegisterTest@6767c1fc]" name="registrase" duration-ms="13943" started-at="2017-10-29T23:48:17Z" finished-at="2017-10-29T23:48:31Z">
+        </test-method> <!-- verificarElementosFindFlight -->
+        <test-method status="PASS" signature="seleccionarOpcionesVuelo()[pri:2, instance:test.FlightReservationTest@6767c1fc]" name="seleccionarOpcionesVuelo" duration-ms="9743" started-at="2017-10-31T01:38:31Z" finished-at="2017-10-31T01:38:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registrase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.RegisterTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="170" started-at="2017-10-29T23:48:31Z" finished-at="2017-10-29T23:48:31Z">
+        </test-method> <!-- seleccionarOpcionesVuelo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.FlightReservationTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="345" started-at="2017-10-31T01:38:41Z" finished-at="2017-10-31T01:38:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.RegisterTest -->
+      </class> <!-- test.FlightReservationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

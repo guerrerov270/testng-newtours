@@ -13,8 +13,8 @@ public class PageBase {
 	 */
 	protected WebDriver driver;
 	/**
-	 * T�tulo de p�gina esperado. Ser� usuado en isPageLoad () para comprobar si la
-	 * p�gina est� cargada.
+	 * T�tulo de p�gina esperado. Ser� usuado en isPageLoad () para comprobar si
+	 * la p�gina est� cargada.
 	 */
 	protected String pageTitle;
 
@@ -25,8 +25,8 @@ public class PageBase {
 	}
 
 	/**
-	 * Comprueba si la p�gina se carga comparando el t�tulo de p�gina esperado con
-	 * un t�tulo de p�gina real.
+	 * Comprueba si la p�gina se carga comparando el t�tulo de p�gina esperado
+	 * con un t�tulo de p�gina real.
 	 **/
 	public boolean isPageLoad() {
 		return (driver.getTitle().contains(pageTitle));
@@ -92,28 +92,48 @@ public class PageBase {
 
 	/**
 	 * M�todo para seleccionar un valor de un comboBox
-	 * @param element, es el tipo select
-	 * @param text, es el texto de la opci�n
+	 * 
+	 * @param element
+	 *            , es el tipo select
+	 * @param text
+	 *            , es el texto de la opci�n
 	 * @return
 	 */
 	public boolean selectDropdownVisibleText(WebElement element, String text) {
-		//Variable para definir la resouesta del m�todo
+		// Variable para definir la resouesta del m�todo
 		boolean result = true;
-		
-		//Tipo select gr�fico de selenium para hacer el cast del elemento recibido
+
+		// Tipo select gr�fico de selenium para hacer el cast del elemento
+		// recibido
 		Select listBox;
-		
-		//Si el elemento est� presente y visible
+
+		// Si el elemento est� presente y visible
 		if (isElementPresentAndDisplay(element)) {
-			//Lo almaceno en el listBox
-			listBox= new Select(element);
-			//Tomo el texto seleccionado
+			// Lo almaceno en el listBox
+			listBox = new Select(element);
+			// Tomo el texto seleccionado
 			listBox.selectByVisibleText(text);
-		}else {
-			result=false;
+		} else {
+			result = false;
 		}
 
 		return result;
 	}// Fin m�todo selectDropdownVisibleText
+
+	/**
+	 * Método que permite realizar una selección en un radio button
+	 * @param elemento
+	 * @return true o false
+	 */
+	public boolean selectRadioButton(WebElement elemento) {
+		// Variable para definir la resouesta del método
+		boolean result = true;
+		if(isElementPresentAndDisplay(elemento)){
+			clickButtonLink(elemento);
+		}else{
+			result = false;
+		}
+		return result;
+	}// Fin método selectRadioButton
 
 }// Fin clase PageBase

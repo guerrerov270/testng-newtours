@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.TestBase;
+import pageObjects.LoginPage;
 import pageObjects.MenuNavegacionPage;
 import pageObjects.RegistroPage;
 
@@ -14,7 +15,7 @@ public class RegisterTest extends TestBase {
 
 	// Títulos de las páginas
 	private String pageTitleIndex = "Welcome: Mercury Tours";
-	private String pageRegister = "Register: Mercury Tours";
+	private String pageTitleRegister = "Register: Mercury Tours";
 
 	// Valores para realizar el registro
 	private String firstName = "Mi nombre";
@@ -47,7 +48,7 @@ public class RegisterTest extends TestBase {
 
 	@Test(priority = 1)
 	public void verificarCamposRegister() {
-		register = new RegistroPage(driver, pageRegister);
+		register = new RegistroPage(driver, pageTitleRegister);
 
 		// Voy a la página de registro
 		menuNavegacion.clickButtonLink(menuNavegacion.getLnkRegister());
@@ -102,10 +103,10 @@ public class RegisterTest extends TestBase {
 	 * encuentra registrado.
 	 */
 	@Test(priority = 2)
-	public void registrase() {
+	public void registrarse() {
 
-		register = new RegistroPage(driver, pageRegister);
-		menuNavegacion = new MenuNavegacionPage(driver, pageRegister);
+		register = new RegistroPage(driver, pageTitleRegister);
+		menuNavegacion = new MenuNavegacionPage(driver, pageTitleRegister);
 		register.registroMercuryTours(firstName, lastName, phone, email, address1, address2, city, state, postalCode,
 				country, userName, password, confirmPassword);
 		esperarAntesDeEjecutar(3);
