@@ -8,7 +8,7 @@ import pageObjects.FindFlightPage;
 import pageObjects.LoginPage;
 import pageObjects.MenuNavegacionPage;
 
-public class FlightReservationTest extends TestBase {
+public class FindFlightTest extends TestBase {
 
 	protected MenuNavegacionPage menuNavegacion;
 	protected FindFlightPage flightP;

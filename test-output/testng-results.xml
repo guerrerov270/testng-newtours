@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30817" started-at="2017-10-31T06:38:10Z" finished-at="2017-10-31T06:38:41Z">
+  <suite name="Default suite" duration-ms="31865" started-at="2017-10-31T16:19:47Z" finished-at="2017-10-31T16:20:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30817" started-at="2017-10-31T06:38:10Z" finished-at="2017-10-31T06:38:41Z">
-      <class name="test.FlightReservationTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.FlightReservationTest@6767c1fc]" name="initializeTestBaseSetup" is-config="true" duration-ms="9701" started-at="2017-10-31T01:38:10Z" finished-at="2017-10-31T01:38:20Z">
+    <test name="Default test" duration-ms="31865" started-at="2017-10-31T16:19:47Z" finished-at="2017-10-31T16:20:19Z">
+      <class name="test.SelectFlightTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.SelectFlightTest@6767c1fc]" name="initializeTestBaseSetup" is-config="true" duration-ms="10871" started-at="2017-10-31T11:19:47Z" finished-at="2017-10-31T11:19:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.FlightReservationTest@6767c1fc]" name="validarTextLinks" duration-ms="6917" started-at="2017-10-31T01:38:20Z" finished-at="2017-10-31T01:38:27Z">
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.SelectFlightTest@6767c1fc]" name="validarTextLinks" duration-ms="15992" started-at="2017-10-31T11:19:58Z" finished-at="2017-10-31T11:20:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarTextLinks -->
-        <test-method status="PASS" signature="verificarElementosFindFlight()[pri:1, instance:test.FlightReservationTest@6767c1fc]" name="verificarElementosFindFlight" duration-ms="3920" started-at="2017-10-31T01:38:27Z" finished-at="2017-10-31T01:38:31Z">
+        <test-method status="PASS" signature="verificarElementosFindFlight()[pri:1, instance:test.SelectFlightTest@6767c1fc]" name="verificarElementosFindFlight" duration-ms="1964" started-at="2017-10-31T11:20:14Z" finished-at="2017-10-31T11:20:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificarElementosFindFlight -->
-        <test-method status="PASS" signature="seleccionarOpcionesVuelo()[pri:2, instance:test.FlightReservationTest@6767c1fc]" name="seleccionarOpcionesVuelo" duration-ms="9743" started-at="2017-10-31T01:38:31Z" finished-at="2017-10-31T01:38:41Z">
+        <test-method status="PASS" signature="seleccionarDepartAndReturn()[pri:2, instance:test.SelectFlightTest@6767c1fc]" name="seleccionarDepartAndReturn" duration-ms="2548" started-at="2017-10-31T11:20:16Z" finished-at="2017-10-31T11:20:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seleccionarOpcionesVuelo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.FlightReservationTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="345" started-at="2017-10-31T01:38:41Z" finished-at="2017-10-31T01:38:41Z">
+        </test-method> <!-- seleccionarDepartAndReturn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.SelectFlightTest@6767c1fc]" name="tearDown" is-config="true" duration-ms="335" started-at="2017-10-31T11:20:18Z" finished-at="2017-10-31T11:20:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.FlightReservationTest -->
+      </class> <!-- test.SelectFlightTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
