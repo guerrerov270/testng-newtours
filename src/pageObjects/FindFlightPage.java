@@ -6,6 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import base.PageBase;
 
+/**
+ * @author finguerrero
+ * @version 26/10/2017
+ * @see <a href = "https://github.com/guerrerov270/testng-newtours" />
+ *      Repositorio del proyecto en Github </a>
+ */
 public class FindFlightPage extends PageBase {
 
 	public FindFlightPage(WebDriver driver, String pageTitle) {

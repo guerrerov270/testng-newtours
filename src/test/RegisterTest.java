@@ -4,10 +4,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.TestBase;
-import pageObjects.LoginPage;
 import pageObjects.MenuNavegacionPage;
 import pageObjects.RegistroPage;
 
+/**
+ * @author finguerrero
+ * @version 26/10/2017
+ * @see <a href = "https://github.com/guerrerov270/testng-newtours" />
+ *      Repositorio del proyecto en Github </a>
+ */
 public class RegisterTest extends TestBase {
 
 	protected MenuNavegacionPage menuNavegacion;

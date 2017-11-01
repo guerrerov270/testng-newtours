@@ -7,6 +7,12 @@ import base.TestBase;
 import pageObjects.LoginPage;
 import pageObjects.MenuNavegacionPage;
 
+/**
+ * @author finguerrero
+ * @version 26/10/2017
+ * @see <a href = "https://github.com/guerrerov270/testng-newtours" />
+ *      Repositorio del proyecto en Github </a>
+ */
 public class LoginTest extends TestBase {
 
 	protected MenuNavegacionPage menuNavegacion;
