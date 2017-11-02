@@ -5,8 +5,8 @@
     <classes>
       <class name="test.BookFlightTest">
         <methods>
+          <include name="seleccionarOpcionesBookFlight"/>
           <include name="initializeTestBaseSetup"/>
-          <include name="verificarElementosBookFlight"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- test.BookFlightTest -->

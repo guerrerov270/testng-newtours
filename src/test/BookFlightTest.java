@@ -25,7 +25,33 @@ public class BookFlightTest extends TestBase {
 	protected SelectFlightTest selectflight;
 
 	// Valores para seleccionar las opciones en la página
-
+	private String firstName0 = "Nombre 1";
+	private String lastName0 = "Apellido 1";
+	private String meal0 = "Vegetarian";
+	private String firstName1 = "Nombre 2";
+	private String lastName1 = "Apellido 2";
+	private String meal1 = "Low Calorie";
+	private String cardType = "Visa";
+	private String cardNumber = "89786-8767";
+	private String expCMonth = "07";
+	private String expCYear = "2010";
+	private String cardFirstName = "Nombre";
+	private String cardMiddleNane = "Segnombre";
+	private String cardLastName = "Apellido";
+	private boolean ticketless = true;
+	private String address1Bill = "Direccion 1";
+	private String address2Bill = "Direccion 2";
+	private String cityBill = "Ciudad";
+	private String stateBill = "Estado";
+	private String postalCodeBill = "057";
+	private String countryBill = "QATAR";
+	boolean sameAsBillingAddress = true;
+	private String address1Del = "Direccion 1";
+	private String address2Del = "Direccion 2";
+	private String cityDel = "Ciudad";
+	private String stateDel = "Estado";
+	private String postalCodeDel = "059";
+	private String countryDel = "UNITED STATES";
 	private String userName = "tutorial";
 	private String password = "tutorial";
 
@@ -182,5 +208,19 @@ public class BookFlightTest extends TestBase {
 		}
 
 	}// Fin método verificarElementosBookFlight
+
+	@Test(priority=2)
+	public void seleccionarOpcionesBookFlight() {
+
+		bookFlightP.seleccionBookAFlight(firstName0, lastName0, meal0,
+				firstName1, lastName1, meal1, cardType, cardNumber, expCMonth,
+				expCYear, cardFirstName, cardMiddleNane, cardLastName,
+				ticketless, address1Bill, address2Bill, cityBill, stateBill,
+				postalCodeBill, countryBill, sameAsBillingAddress, address1Del,
+				address2Del, cityDel, stateDel, postalCodeDel, countryDel);
+
+		// Falta verificar la operación
+
+	}// Fin clase seleccionarOpcionesBookFlight
 
 }// Fin clase BookFlightTest
