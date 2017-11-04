@@ -21,4 +21,9 @@
 			<class name="test.BookFlightTest" />
 		</classes>
 	</test>
+	<test name="t005">
+		<classes>
+			<class name="test.FlightConfirmationTest" />
+		</classes>
+	</test>
 </suite>

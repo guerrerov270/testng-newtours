@@ -1,33 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57927" started-at="2017-11-04T01:17:32Z" finished-at="2017-11-04T01:18:30Z">
+  <suite name="Autenticacion" duration-ms="158676" started-at="2017-11-04T01:24:55Z" finished-at="2017-11-04T01:27:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57927" started-at="2017-11-04T01:17:32Z" finished-at="2017-11-04T01:18:30Z">
-      <class name="test.FlightConfirmationTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.FlightConfirmationTest@3e6fa38a]" name="initializeTestBaseSetup" is-config="true" duration-ms="9599" started-at="2017-11-03T20:17:33Z" finished-at="2017-11-03T20:17:42Z">
+    <test name="t001" duration-ms="18752" started-at="2017-11-04T01:24:55Z" finished-at="2017-11-04T01:25:14Z">
+      <class name="test.LoginTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.LoginTest@3e6fa38a]" name="initializeTestBaseSetup" is-config="true" duration-ms="8553" started-at="2017-11-03T20:24:55Z" finished-at="2017-11-03T20:25:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.FlightConfirmationTest@3e6fa38a]" name="validarTextLinks" duration-ms="46038" started-at="2017-11-03T20:17:42Z" finished-at="2017-11-03T20:18:28Z">
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.LoginTest@3e6fa38a]" name="validarTextLinks" duration-ms="1397" started-at="2017-11-03T20:25:04Z" finished-at="2017-11-03T20:25:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarTextLinks -->
-        <test-method status="PASS" signature="verificarElementosFlightConfirmation()[pri:1, instance:test.FlightConfirmationTest@3e6fa38a]" name="verificarElementosFlightConfirmation" duration-ms="703" started-at="2017-11-03T20:18:28Z" finished-at="2017-11-03T20:18:29Z">
+        <test-method status="PASS" signature="verificarCamposLogin()[pri:1, instance:test.LoginTest@3e6fa38a]" name="verificarCamposLogin" duration-ms="684" started-at="2017-11-03T20:25:05Z" finished-at="2017-11-03T20:25:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificarCamposLogin -->
+        <test-method status="PASS" signature="autenticarse()[pri:2, instance:test.LoginTest@3e6fa38a]" name="autenticarse" duration-ms="7743" started-at="2017-11-03T20:25:06Z" finished-at="2017-11-03T20:25:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autenticarse -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.LoginTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="277" started-at="2017-11-03T20:25:14Z" finished-at="2017-11-03T20:25:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.LoginTest -->
+    </test> <!-- t001 -->
+    <test name="t002" duration-ms="21758" started-at="2017-11-04T01:25:14Z" finished-at="2017-11-04T01:25:36Z">
+      <class name="test.FindFlightTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.FindFlightTest@4dfa3a9d]" name="initializeTestBaseSetup" is-config="true" duration-ms="4266" started-at="2017-11-03T20:25:14Z" finished-at="2017-11-03T20:25:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.FindFlightTest@4dfa3a9d]" name="validarTextLinks" duration-ms="5018" started-at="2017-11-03T20:25:19Z" finished-at="2017-11-03T20:25:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validarTextLinks -->
+        <test-method status="PASS" signature="verificarElementosFindFlight()[pri:1, instance:test.FindFlightTest@4dfa3a9d]" name="verificarElementosFindFlight" duration-ms="3202" started-at="2017-11-03T20:25:24Z" finished-at="2017-11-03T20:25:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificarElementosFindFlight -->
+        <test-method status="PASS" signature="seleccionarOpcionesVuelo()[pri:2, instance:test.FindFlightTest@4dfa3a9d]" name="seleccionarOpcionesVuelo" duration-ms="8928" started-at="2017-11-03T20:25:27Z" finished-at="2017-11-03T20:25:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleccionarOpcionesVuelo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.FindFlightTest@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="270" started-at="2017-11-03T20:25:36Z" finished-at="2017-11-03T20:25:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.FindFlightTest -->
+    </test> <!-- t002 -->
+    <test name="t003" duration-ms="23207" started-at="2017-11-04T01:25:36Z" finished-at="2017-11-04T01:25:59Z">
+      <class name="test.SelectFlightTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.SelectFlightTest@598067a5]" name="initializeTestBaseSetup" is-config="true" duration-ms="4729" started-at="2017-11-03T20:25:36Z" finished-at="2017-11-03T20:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.SelectFlightTest@598067a5]" name="validarTextLinks" duration-ms="13893" started-at="2017-11-03T20:25:41Z" finished-at="2017-11-03T20:25:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validarTextLinks -->
+        <test-method status="PASS" signature="verificarElementosFindFlight()[pri:1, instance:test.SelectFlightTest@598067a5]" name="verificarElementosFindFlight" duration-ms="1892" started-at="2017-11-03T20:25:55Z" finished-at="2017-11-03T20:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificarElementosFindFlight -->
+        <test-method status="PASS" signature="seleccionarDepartAndReturn()[pri:2, instance:test.SelectFlightTest@598067a5]" name="seleccionarDepartAndReturn" duration-ms="2366" started-at="2017-11-03T20:25:57Z" finished-at="2017-11-03T20:25:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleccionarDepartAndReturn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.SelectFlightTest@598067a5]" name="tearDown" is-config="true" duration-ms="236" started-at="2017-11-03T20:25:59Z" finished-at="2017-11-03T20:25:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.SelectFlightTest -->
+    </test> <!-- t003 -->
+    <test name="t004" duration-ms="48766" started-at="2017-11-04T01:25:59Z" finished-at="2017-11-04T01:26:48Z">
+      <class name="test.BookFlightTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.BookFlightTest@42dafa95]" name="initializeTestBaseSetup" is-config="true" duration-ms="4465" started-at="2017-11-03T20:25:59Z" finished-at="2017-11-03T20:26:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.BookFlightTest@42dafa95]" name="validarTextLinks" duration-ms="15890" started-at="2017-11-03T20:26:04Z" finished-at="2017-11-03T20:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validarTextLinks -->
+        <test-method status="PASS" signature="verificarElementosBookFlight()[pri:1, instance:test.BookFlightTest@42dafa95]" name="verificarElementosBookFlight" duration-ms="5956" started-at="2017-11-03T20:26:20Z" finished-at="2017-11-03T20:26:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificarElementosBookFlight -->
+        <test-method status="PASS" signature="seleccionarOpcionesBookFlight()[pri:2, instance:test.BookFlightTest@42dafa95]" name="seleccionarOpcionesBookFlight" duration-ms="22105" started-at="2017-11-03T20:26:26Z" finished-at="2017-11-03T20:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleccionarOpcionesBookFlight -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.BookFlightTest@42dafa95]" name="tearDown" is-config="true" duration-ms="284" started-at="2017-11-03T20:26:48Z" finished-at="2017-11-03T20:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.BookFlightTest -->
+    </test> <!-- t004 -->
+    <test name="t005" duration-ms="45972" started-at="2017-11-04T01:26:48Z" finished-at="2017-11-04T01:27:34Z">
+      <class name="test.FlightConfirmationTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.FlightConfirmationTest@7085bdee]" name="initializeTestBaseSetup" is-config="true" duration-ms="4392" started-at="2017-11-03T20:26:48Z" finished-at="2017-11-03T20:26:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.FlightConfirmationTest@7085bdee]" name="validarTextLinks" duration-ms="39651" started-at="2017-11-03T20:26:52Z" finished-at="2017-11-03T20:27:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validarTextLinks -->
+        <test-method status="PASS" signature="verificarElementosFlightConfirmation()[pri:1, instance:test.FlightConfirmationTest@7085bdee]" name="verificarElementosFlightConfirmation" duration-ms="720" started-at="2017-11-03T20:27:32Z" finished-at="2017-11-03T20:27:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificarElementosFlightConfirmation -->
-        <test-method status="PASS" signature="seleccionarOpcionesConfirmationFlight()[pri:2, instance:test.FlightConfirmationTest@3e6fa38a]" name="seleccionarOpcionesConfirmationFlight" duration-ms="1094" started-at="2017-11-03T20:18:29Z" finished-at="2017-11-03T20:18:30Z">
+        <test-method status="PASS" signature="seleccionarOpcionesConfirmationFlight()[pri:2, instance:test.FlightConfirmationTest@7085bdee]" name="seleccionarOpcionesConfirmationFlight" duration-ms="1022" started-at="2017-11-03T20:27:33Z" finished-at="2017-11-03T20:27:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleccionarOpcionesConfirmationFlight -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.FlightConfirmationTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="323" started-at="2017-11-03T20:18:30Z" finished-at="2017-11-03T20:18:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.FlightConfirmationTest@7085bdee]" name="tearDown" is-config="true" duration-ms="156" started-at="2017-11-03T20:27:34Z" finished-at="2017-11-03T20:27:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test.FlightConfirmationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- t005 -->
+  </suite> <!-- Autenticacion -->
 </testng-results>
