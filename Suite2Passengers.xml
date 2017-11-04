@@ -8,21 +8,6 @@
 	</test>
 	<test name="t002">
 		<classes>
-			<class name="test.FindFlightTest" />
-		</classes>
-	</test>
-	<test name="t003">
-		<classes>
-			<class name="test.SelectFlightTest" />
-		</classes>
-	</test>
-	<test name="t004">
-		<classes>
-			<class name="test.BookFlightTest" />
-		</classes>
-	</test>
-	<test name="t005">
-		<classes>
 			<class name="test.FlightConfirmationTest" />
 		</classes>
 	</test>
