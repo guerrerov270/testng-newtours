@@ -57,7 +57,6 @@ public class BookFlightTest extends TestBase {
 
 	// Títulos de las páginas
 	private String pageTitleIndex = "Welcome: Mercury Tours";
-	private String pageTitleFindFlight = "Find a Flight: Mercury Tours";
 	private String pageTitleBookFlight = "Book a Flight: Mercury Tours";
 
 	/**
@@ -67,7 +66,7 @@ public class BookFlightTest extends TestBase {
 	 */
 	@Test
 	public void validarTextLinks() {
-		menuNavegacion = new MenuNavegacionPage(driver, pageTitleFindFlight);
+		menuNavegacion = new MenuNavegacionPage(driver, pageTitleBookFlight);
 
 		// Debo ingresar primero
 		login = new LoginPage(driver, pageTitleIndex);
@@ -209,8 +208,10 @@ public class BookFlightTest extends TestBase {
 
 	}// Fin método verificarElementosBookFlight
 
-	@Test(priority=2)
+	@Test(priority = 2)
 	public void seleccionarOpcionesBookFlight() {
+
+		bookFlightP = new BookFlightPage(driver, pageTitleBookFlight);
 
 		bookFlightP.seleccionBookAFlight(firstName0, lastName0, meal0,
 				firstName1, lastName1, meal1, cardType, cardNumber, expCMonth,

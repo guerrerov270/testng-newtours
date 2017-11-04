@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69856" started-at="2017-11-02T21:29:15Z" finished-at="2017-11-02T21:30:25Z">
+  <suite name="Default suite" duration-ms="57927" started-at="2017-11-04T01:17:32Z" finished-at="2017-11-04T01:18:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69856" started-at="2017-11-02T21:29:15Z" finished-at="2017-11-02T21:30:25Z">
-      <class name="test.BookFlightTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.BookFlightTest@3e6fa38a]" name="initializeTestBaseSetup" is-config="true" duration-ms="12247" started-at="2017-11-02T16:29:15Z" finished-at="2017-11-02T16:29:27Z">
+    <test name="Default test" duration-ms="57927" started-at="2017-11-04T01:17:32Z" finished-at="2017-11-04T01:18:30Z">
+      <class name="test.FlightConfirmationTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup()[pri:0, instance:test.FlightConfirmationTest@3e6fa38a]" name="initializeTestBaseSetup" is-config="true" duration-ms="9599" started-at="2017-11-03T20:17:33Z" finished-at="2017-11-03T20:17:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.BookFlightTest@3e6fa38a]" name="validarTextLinks" duration-ms="21447" started-at="2017-11-02T16:29:27Z" finished-at="2017-11-02T16:29:49Z">
+        <test-method status="PASS" signature="validarTextLinks()[pri:0, instance:test.FlightConfirmationTest@3e6fa38a]" name="validarTextLinks" duration-ms="46038" started-at="2017-11-03T20:17:42Z" finished-at="2017-11-03T20:18:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarTextLinks -->
-        <test-method status="PASS" signature="verificarElementosBookFlight()[pri:1, instance:test.BookFlightTest@3e6fa38a]" name="verificarElementosBookFlight" duration-ms="6840" started-at="2017-11-02T16:29:49Z" finished-at="2017-11-02T16:29:55Z">
+        <test-method status="PASS" signature="verificarElementosFlightConfirmation()[pri:1, instance:test.FlightConfirmationTest@3e6fa38a]" name="verificarElementosFlightConfirmation" duration-ms="703" started-at="2017-11-03T20:18:28Z" finished-at="2017-11-03T20:18:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificarElementosBookFlight -->
-        <test-method status="PASS" signature="seleccionarOpcionesBookFlight()[pri:2, instance:test.BookFlightTest@3e6fa38a]" name="seleccionarOpcionesBookFlight" duration-ms="28787" started-at="2017-11-02T16:29:55Z" finished-at="2017-11-02T16:30:24Z">
+        </test-method> <!-- verificarElementosFlightConfirmation -->
+        <test-method status="PASS" signature="seleccionarOpcionesConfirmationFlight()[pri:2, instance:test.FlightConfirmationTest@3e6fa38a]" name="seleccionarOpcionesConfirmationFlight" duration-ms="1094" started-at="2017-11-03T20:18:29Z" finished-at="2017-11-03T20:18:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seleccionarOpcionesBookFlight -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.BookFlightTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="309" started-at="2017-11-02T16:30:24Z" finished-at="2017-11-02T16:30:25Z">
+        </test-method> <!-- seleccionarOpcionesConfirmationFlight -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.FlightConfirmationTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="323" started-at="2017-11-03T20:18:30Z" finished-at="2017-11-03T20:18:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.BookFlightTest -->
+      </class> <!-- test.FlightConfirmationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
